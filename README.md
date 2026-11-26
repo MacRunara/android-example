@@ -1,6 +1,6 @@
 # AndroidExample — Macrunara Android CI Example
 
-A minimal Android app (single Activity, Java, no dependencies) demonstrating CI on **Macrunara** — M4 Mac mini (Apple Silicon) runners for GitHub Actions.
+A minimal Android app (single Activity, Java, no dependencies) demonstrating CI on **Macrunara** — M4/M6 Mac mini (Apple Silicon) runners for GitHub Actions.
 
 Works immediately after fork: the node image ships JDK 17 (temurin) + Android SDK (API 35, build-tools 35.0.0, NDK 27) with licenses pre-accepted — no setup steps, no secrets.
 
@@ -8,7 +8,7 @@ Works immediately after fork: the node image ships JDK 17 (temurin) + Android SD
 
 1. Install the **Macrunara** App from GitHub Marketplace into your organization.
 2. Fork this repository (or copy `.github/workflows/android-gradle.yml` into your own repo).
-3. Push to `main` — the job runs on a Macrunara M4 node and uploads the debug APK as an artifact.
+3. Push to `main` — the job runs on a Macrunara M4/M6 node and uploads the debug APK as an artifact.
 
 The workflow uses the standard three-label form `runs-on: [macos, arm64, macrunara]`. Do **not** use `self-hosted` or `macos-latest` — the job would queue forever without an error.
 
@@ -52,7 +52,7 @@ workflow 使用标准三标签 `runs-on: [macos, arm64, macrunara]`。**不要**
 
 # AndroidExample — Macrunara Android CI のサンプル
 
-最小構成の Android アプリ（シングル Activity、Java、依存なし）で、**Macrunara**（M4 Mac mini Apple Silicon runner）による GitHub Actions CI を体験できます。
+最小構成の Android アプリ（シングル Activity、Java、依存なし）で、**Macrunara**（M4/M6 Mac mini Apple Silicon runner）による GitHub Actions CI を体験できます。
 
 フォークですぐに実行可能：ノードイメージには JDK 17（temurin）+ Android SDK（API 35、build-tools 35.0.0、NDK 27）がプリインストールされ、ライセンスも承認済み——セットアップステップも secrets も不要です。
 
@@ -60,7 +60,7 @@ workflow 使用标准三标签 `runs-on: [macos, arm64, macrunara]`。**不要**
 
 1. GitHub Marketplace から **Macrunara** App を組織にインストールします。
 2. このリポジトリをフォーク（または `.github/workflows/android-gradle.yml` を自分のリポジトリにコピー）します。
-3. `main` に push すると、ジョブは Macrunara M4 ノード上で自動実行され、debug APK がアーティファクトとしてアップロードされます。
+3. `main` に push すると、ジョブは Macrunara M4/M6 ノード上で自動実行され、debug APK がアーティファクトとしてアップロードされます。
 
 ワークフローは標準の3ラベル `runs-on: [macos, arm64, macrunara]` を使用します。`self-hosted` や `macos-latest` は使用しないでください——ジョブが永遠にキューイングされたままエラーも出ません。
 
